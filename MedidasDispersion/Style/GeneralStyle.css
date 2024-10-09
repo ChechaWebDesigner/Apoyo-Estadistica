@@ -1,0 +1,53 @@
+:root {
+    --bodyBg: #FFD24C;
+    --containerBg: #FFE69A;
+    --btnCalcularBg: linear-gradient(90deg, #83BD75, #51af53);
+    --btnLimpiarBg: linear-gradient(90deg, #80ED99, #57CC99);
+    --btnEliminarBg: #EF9F9F;
+    --borderRadius: 25px;
+    --linkBg: linear-gradient(90deg,#03a9f4,#7FB5FF);
+    --boxColor: #FFF9B6;
+}
+
+
+body {
+    padding: 2rem;
+    background-color: var(--bodyBg);
+}
+
+h1 {
+    color: var(--white);
+}
+
+input {
+    width: 40%;
+    padding: 2rem 1rem;
+    outline: none;
+    border: 2px solid var(--inputBorder);
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: 0.4s;
+    box-shadow: 15px 25px 50px 0 var(--inputBorder);
+}
+
+a {
+    color: var(--white);
+    font-size: 2rem;
+    text-decoration: none;
+    margin-top: 2rem;
+}
+
+.resultados {
+    display: none;
+    padding: 1.5rem 0.5rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+button {
+    display: inline-block;
+    outline: none;
+    border: none;
+}

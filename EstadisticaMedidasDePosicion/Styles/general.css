@@ -1,0 +1,30 @@
+
+/* Variables */
+
+:root {
+    --bodyBg: #CCD6A6;
+    --containerBg: #DAE2B6;
+    --btnCalcularBg: linear-gradient(90deg, #D2F5E3, #A7C4BC);
+    --btnLimpiarBg: linear-gradient(90deg, #80ED99, #57CC99);
+    --btnEliminarBg: #EF9F9F;
+    --borderRadius: 25px;
+    --linkBg: linear-gradient(90deg,#D1EAA3,#EFEE9D);
+    --boxColor: #DFE8CC;
+}
+
+.Cuartil {
+    font-size: 1.2rem;
+}
+
+.opcionesPosicion {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+input[type=radio] {
+    width: 1.5rem;
+    height: 1.5rem;
+    min-width: 1rem;
+    margin: 0.1rem;
+}

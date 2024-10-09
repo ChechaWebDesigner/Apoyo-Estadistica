@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;600&family=Cormorant+SC:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Variables */
+
+:root {
+    --fuenteTitulo: 'Cormorant SC', serif;
+    --fuenteLetra: 'Arimo', sans-serif;
+}
+
+/* Estilos del fondo */
+
+body {
+    min-height: 100vh;
+    height: 100%;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+
+/* Creando el sistema GRID */
+
+main {
+    height: 100vh;
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: auto;
+}
+
+/* Especificando sus posiciones */
+
+header {
+    grid-area: header;
+}
+
+section {
+    grid-area: estadistica;
+    overflow-y: auto;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* Header y Footer */
+
+header,
+footer {
+    padding: 1rem;
+}
+
+/* Header */
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    font-family: var(--fuenteTitulo);
+    font-size: 3.5em;
+}
+
+header .miFoto {
+    margin: 1.25rem 0;
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    box-shadow: 0.5rem 0.5rem 50px 0 #999;
+}
+
+header .informacion {
+    text-align: justify;
+    font-family: var(--fuenteLetra);
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+header .informacion span {
+    font-weight: 600;
+}
+
+/* Section derecha */
+
+section {
+    padding: 1rem 1.5rem 2rem;
+}
+
+/* Informacion sobre la pagina */
+
+section .sobreLaPag h2 {
+    font-family: var(--fuenteTitulo);
+    font-size: 4em;
+    text-align: center;
+}
+
+section .sobreLaPag p {
+    font-family: var(--fuenteLetra);
+    font-size: 1.15rem;
+    text-align: justify;
+}
+
+
+/* Enlaces */
+
+.enlaces {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.enlaces a {
+    margin: 1.5rem 0.5rem;
+    width: 25%;
+    height: 150px;
+    text-align: center;
+    flex-basis: 200px;
+    text-decoration: none;
+    color: #111;
+}
+
+.enlaces a h3 {
+    padding: 0.5rem 0;
+}
+
+.enlaces a img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+}
+
+/* Responsive */
+
+@media screen and (min-width: 700px) {
+    main {
+        grid-template-areas:
+            "header header header header estadistica estadistica estadistica estadistica estadistica estadistica"
+            " footer footer footer footer estadistica estadistica estadistica estadistica estadistica estadistica";
+    }
+
+    section {
+        background-color: #FFFFEF99;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    main {
+        grid-template-areas:
+            "header header header header header header header header header header"
+            " estadistica estadistica estadistica estadistica estadistica estadistica estadistica estadistica estadistica estadistica"
+            " footer footer footer footer footer footer footer footer footer footer";
+    }
+
+    section {
+        background-color: #feeefe99;
+        height: 300px;
+    }
+}

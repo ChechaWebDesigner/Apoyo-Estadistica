@@ -1,0 +1,13 @@
+#btnCalcularSimple {
+    margin: 15px 0;
+    padding: 1.15rem 2.5rem;
+    background: linear-gradient(90deg,#83BD75,#4E944F);
+    border-radius: 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#btnCalcularSimple:hover{
+    cursor: pointer;
+}
+

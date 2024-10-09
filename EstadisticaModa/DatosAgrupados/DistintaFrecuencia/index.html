@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moda</title>
+    <link rel="stylesheet" href="./../../../EstadisticaMediana/Styles/generalStyles.css">
+    <link rel="stylesheet" href="./../../Styles/General.css">
+    <link rel="stylesheet" href="./../style.css">
+</head>
+<body>
+    <section class="contenedor">
+        <h2>Valores Agrupados</h2>
+            <div class="container">
+                <div class="item col-2">
+                    <p>Ingrese LI</p>
+                    <input type="text" name="" class="valoresLi">
+                </div>
+                <div class="Divisor-Line col-1">
+                    -
+                </div>
+                <div class="item col-2">
+                    <p>Ingrese LS</p>
+                    <input type="text" name="" class="valoresLs">
+                </div>
+                <div class="item col-5">
+                    <p>Ingrese las frecuencias</p>
+                    <input type="text" name="" class="frecuencias">
+                </div>
+                <div class="agregar">
+                    <button id="agregar">+</button>
+                </div>
+            </div>
+            <div class="contenedor-2">
+
+            </div>
+        
+        <button id="btnCalcular">Calcular</button>
+    </section>
+
+    <section class="resultados">
+        <h2>La Moda <span class="tipoModa"></span> de los datos es: </h2>
+        <span class="datos"></span>
+        <p class="mensaje"></p>
+        <button id="limpiar">Nuevo</button>
+    </section>
+
+    <div class="next-page">
+        <a href="./../../DatosSimples/index.html" class="Agrupados">Ir a Datos Simples</a>
+        <a href="./../../DatosSinAgrupar/index.html" class="SinAgrupar">Ir a Datos Sin Agrupar</a>
+        <a href="./../index.html" class="SinAgrupar">Frecuencia Igual</a>
+        <a href="./../../../index.html" class="SinAgrupar">Inicio</a>
+
+    </div>
+    <script src="index.js" type="module"></script>
+</body>
+</html>

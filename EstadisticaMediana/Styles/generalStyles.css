@@ -1,0 +1,186 @@
+
+/* Variables */
+
+:root {
+    --bodyBg: #112031;
+    --containerBg: #C4DDFF;
+    --btnCalcularBg: linear-gradient(90deg, #83BD75, #4E944F);
+    --btnLimpiarBg: linear-gradient(90deg, #80ED99, #57CC99);
+    --btnEliminarBg: #EF9F9F;
+    --borderRadius: 25px;
+    --linkBg: linear-gradient(90deg,#03a9f4,#7FB5FF);
+    --boxColor: #333;
+}
+
+body {
+    margin: 0;
+    padding: 1rem 0 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--bodyBg);
+}
+
+
+/* Contenedores */
+
+.contenedor,
+.resultados {
+    background-color: var(--containerBg);
+    width: 50%;
+    min-width: 300px;
+    margin: 3rem auto;
+    padding: 1.5rem;
+    border-radius: var(--borderRadius);
+    text-align: center;
+    box-shadow: 7px 10px 15px var(--boxColor);
+}
+
+.resultados {
+    display: none;
+}
+
+/* iNPUTS */
+
+.contenedor input {
+    width: 75%;
+}
+
+/* Botones */
+
+#btnCalcular,
+#limpiar {
+    width: 30%;
+    min-width: 150px;
+    margin: 15px 0;
+    padding: 1.1rem;
+    border-radius: var(--borderRadius);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#btnCalcular {
+    background: var(--btnCalcularBg);
+}
+
+#limpiar {
+    background: var(--btnLimpiarBg);
+}
+
+#btnCalcular:hover, #limpiar:hover {
+    cursor: pointer;
+}
+
+/* Resultado */
+
+.datos, .mensaje {
+    font-size: 1.5rem;
+}
+
+.datos {
+    font-style: italic;
+    overflow: auto;
+}
+
+/* Grid Container */
+
+.container,
+.container-jr {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(20px, 1fr));
+    grid-row: auto;
+    margin: 0.75rem 0;
+    align-items: center;
+}
+
+.container .item,
+.container-jr .item {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Grid System */
+
+.col-1 {
+    grid-column: span 1;
+}
+
+.col-2 {
+    grid-column: span 2;
+}
+
+.col-5 {
+    grid-column: span 5;
+}
+
+.agregar,
+.deleter {
+    grid-column: span 2;
+    align-self: flex-end;
+}
+
+#agregar,
+.eliminar {
+    width: 50%;
+    min-width: 50px;
+    padding: 0.5rem;
+    border: 1px solid #000;
+    border-radius: 15px;
+    background-color: #0005;
+    color: #fff;
+    font-size: 1rem;
+}
+
+#agregar:hover,
+.eliminar:hover {
+    cursor: pointer;
+}
+
+.eliminar {
+    background-color: var(--btnEliminarBg);
+    color: #000;
+}
+
+/* Btn Ir a otra mediana */
+
+.next-page {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.next-page a {
+    width: 30%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 150px;
+    margin: 1rem 1.5rem;
+    padding: 1.15rem;
+    background: var(--linkBg);
+    border-radius: 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    transition-duration: 0.3s;
+}
+
+.next-page a:hover{
+    cursor: pointer;
+    color: #555;
+}
+
+/* Input Stytle */
+
+input[type="text"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    padding: 0.5rem 0;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
